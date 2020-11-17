@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: dimgray;
+    padding-top: .5rem;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+}
+#title {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+    margin: auto;
+    background-color: white;
+    width: max-content;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 15px;
+}
+footer {
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    padding: 1px;
+    font-family: 'Ubuntu Mono', monospace;
+    position: fixed;
+    bottom: 0;
+}
+#message {
+    background-color: white;
+    font-family: 'Ubuntu Mono', monospace;
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 4px;
+    border-radius: 4px;
+    width: max-content;
+}
