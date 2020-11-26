@@ -2,12 +2,13 @@
 /* https://fonts.google.com/featured/Plex */
 * {
     box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 body {
-    background-color: dodgerblue;
+    background-image: linear-gradient(0deg, rgb(0, 91, 182) 0%,dodgerblue 30%);
     padding-top: .5rem;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     margin: 0px;
 }
 #title {
@@ -24,11 +25,9 @@ footer {
     background-color: white;
     text-align: center;
     width: 100%;
-    margin-top: 10px;
-    padding: 1px;
-    font-family: 'Ubuntu Mono', monospace;
-    position: fixed;
-    bottom: 0;
+    /* margin-top: 10px; */
+    padding: 1px; 
+
 }
 .articles article .article_content {
     display: none;
@@ -45,8 +44,16 @@ footer {
     border-radius: 15px;
     height: 150px;
     box-shadow: -0.5rem 0 3rem black;
+    z-index: 5;
 }
-
+#about #scroll{
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+#about {
+    height: 100vh;
+}
 .articles {
     display: flex;
     color: lightgray;
@@ -54,7 +61,7 @@ footer {
     margin: auto;
     height: 70vh;
 }
-.articles article header {
+header {
     font-family: 'IBM Plex Serif', serif;
     font-size: 20px;
     font-style: italic;
@@ -75,3 +82,29 @@ footer {
 {
     margin-left: -100px;
 }
+.stickytest {
+    height: 300vh;
+    width: 100%;
+    background-image: url('./images/yosemite.jpg');
+    background-attachment: fixed;
+    background-size: auto 300vh;
+    color: dimgray;
+    padding: 2rem;
+}
+.stickytest h1 {
+    margin: auto;
+    width: max-content;
+}
+.stickytest_article {
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    width: max-content;
+}
+.stickytest_article date {
+    font-family: 'IBM Plex Mono', monospace;
+    font-style: italic;
+}
+/* .stickytest {
+    box-shadow: inset black 0px 0px 1rem;
+} */
