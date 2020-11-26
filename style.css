@@ -87,7 +87,6 @@ header {
     width: 100%;
     background-image: url('./images/yosemite.jpg');
     background-attachment: fixed;
-    background-size: auto 300vh;
     color: dimgray;
     padding: 2rem;
 }
