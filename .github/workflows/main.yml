@@ -32,14 +32,6 @@ jobs:
       # uses: cicirello/generate-sitemap@2777ea0908c8365591fe1f1960ef898ca326511b
         uses: cicirello/generate-sitemap@v1.6.1
         with:
-          # The path to the root of the website
-          path-to-root: . # default is .
-          # The url of your webpage
           base-url-path: https://doktormugg.se/ # default is https://web.address.of.your.nifty.website/
-          # Indicates whether to include html files in the sitemap.
-          include-html: true # default is true
-          # Indicates whether to include pdf files in the sitemap.
-          include-pdf: true # default is true
-          # Indicates if sitemap should be formatted in xml.
-          sitemap-format: xml # default is xml
+
  
