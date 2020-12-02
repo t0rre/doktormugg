@@ -37,9 +37,9 @@ jobs:
           # The url of your webpage
           base-url-path: https://doktormugg.se/ # default is https://web.address.of.your.nifty.website/
           # Indicates whether to include html files in the sitemap.
-          include-html: false # default is true
+          include-html: true # default is true
           # Indicates whether to include pdf files in the sitemap.
-          include-pdf: false # default is true
+          include-pdf: true # default is true
           # Indicates if sitemap should be formatted in xml.
           sitemap-format: xml # default is xml
  
