@@ -28,6 +28,7 @@ jobs:
           fetch-depth: 0 
 
       - name: generate-sitemap
+        id: sitemap
       # You may pin to the exact commit or the version.
       # uses: cicirello/generate-sitemap@2777ea0908c8365591fe1f1960ef898ca326511b
         uses: cicirello/generate-sitemap@v1.6.1
