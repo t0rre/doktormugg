@@ -1,0 +1,44 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main , christmas]
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 
+
+      - name: generate-sitemap
+      # You may pin to the exact commit or the version.
+      # uses: cicirello/generate-sitemap@2777ea0908c8365591fe1f1960ef898ca326511b
+        uses: cicirello/generate-sitemap@v1.6.1
+        with:
+          # The path to the root of the website
+          path-to-root: .# default is .
+          # The url of your webpage
+          base-url-path: https://doktormugg.se/ # default is https://web.address.of.your.nifty.website/
+          # Indicates whether to include html files in the sitemap.
+          include-html: false# default is true
+          # Indicates whether to include pdf files in the sitemap.
+          include-pdf: false# default is true
+          # Indicates if sitemap should be formatted in xml.
+          sitemap-format: xml# default is xml
