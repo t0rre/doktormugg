@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>doktormugg.se</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./images/dm.svg" type="image/svg">
+    <link rel="shortcut icon" href="./images/dm_purple.svg" type="image/svg">
+    <script src="images.js"></script>
+    <script src="colorScheme.js"></script>
+    <script defer src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <!-- for link preview -->
     <meta property="og:url" content="https://doktormugg.se" />
     <meta property="og:title" content="doktormugg.se" />
@@ -14,39 +18,34 @@
     <meta property="og:type" content="website" />
 </head>
 <body>
-    <section id="about">
-        <div id="title">doktormugg.se</div>
-        <div class="articles">
-        <article id="article_why">
-            <header class="article_title">Varför?</header>
-            <div class="article_content">
-                <p class="article_text">Bra fråga.</p>
-            </div>
-            
-        </article>
-        <article id="article_who">
-            <header class="article_title">Vem?</header>
-            <div class="article_content">
-                <p class="article_text">Vem är Doktor Mugg? Marko Lehtosalo.<br>Vem har gjort sidan? Tor Smedberg.</p>
-            </div>
-        </article>
-        <article id="article_how">
-            <header class="article_title">Hur?</header>
-            <div class="article_content">
-                <p class="article_text">Sidan hostas via GitHub Pages.</p>
-            </div>
-        </article>
+    <div class="banner">
+        <h2>Doktormugg.se</h2>
+        <div id="dm_computer_container"></div>
     </div>
-    <header id=scroll>Scrolla</header>
-    </section>
-    <section class=stickytest>
-        <article class="stickytest_article">
-            <header>Yosemite</header>
-            <p>Yosemite är en amerikansk nationalpark.</p>
-            <date>2020-11-26</date>
-        </article>
-    </section>
-    <script src="script.js"></script>
+    <article>
+        <h3>Vad är doktormugg.se?</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, in accusantium? Minus laboriosam assumenda explicabo, exercitationem officiis tempore qui neque ut magnam suscipit possimus ad nemo magni aliquid iure nam.
+        Quo, ad dolorem dolor ipsa cum magni quam reprehenderit neque ab non rem consectetur tenetur animi explicabo sint, pariatur repudiandae enim. Sunt quos sed doloribus veniam esse. Ratione, illum quibusdam!
+        Quisquam officia, error deleniti illum ad officiis voluptatibus autem tenetur! Tenetur nam iure, id voluptas temporibus doloremque ad at veritatis porro ea officia aspernatur illum ipsam voluptatem neque numquam facilis!
+        Assumenda, nam numquam corporis aut qui, itaque suscipit voluptates exercitationem, expedita nostrum harum nobis? Error non perferendis minus esse expedita excepturi! Quaerat commodi rem tempore nesciunt, sapiente nostrum tenetur architecto?
+        Illo provident nesciunt ut molestias fugiat quam cumque quidem minus assumenda repudiandae non, optio id ipsum sequi, odit voluptates? Quia doloribus id dicta natus ullam magnam voluptatibus quaerat accusantium quibusdam!</p>
+    </article>
+    <article class="author" itemscope itemtype="http://schema.org/Author">
+        <div class="left">
+            <h2>Tor Smedberg</h2>
+            <img class="author_picture" src="https://avatars.githubusercontent.com/u/26095801?s=460&v=4" alt="Tor Smedbergs profilbild">
+            <div class="profile_card">
+                <p>Github: <a href="https://github.com/t0rre" target="blank">@t0rre</a></p>
+            </div>
+            <div class="profile_card">
+                <p>Twitter: <a href="https://twitter.com/TorSmedberg" target="blank">@TorSmedberg</a></p>
+            </div>
+        </div>
+        <div class="right">
+            <h3>Om mig</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, ipsam autem. Pariatur consectetur beatae delectus quaerat in minus et aliquid, magnam sunt alias officia natus voluptatibus cupiditate distinctio fugiat! Ipsum.Tempora itaque esse, enim maiores doloribus fugit voluptatum magni, distinctio est repudiandae suscipit? Praesentium voluptates, minus, blanditiis aut laudantium harum, labore minima odio eum temporibus incidunt quisquam cupiditate ipsam dolores?</p>
+        </div>
+    </article>
+    <footer><p>Copyright <a href="https://github.com/t0rre">Tor Smedberg</a> 2021</p></footer>
 </body>
-<footer>Copyright Tor Smedberg 2021</footer>
 </html>
