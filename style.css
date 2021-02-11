@@ -6,15 +6,15 @@
     font-family: 'IBM Plex Sans', sans-serif;
     padding: 0px;
     margin: 0px;
-    --text-color: white;
     color: var(--text-color);
-    --bg-color: #23272A;
 }
 body {
     background-image: linear-gradient(135deg, #0074E8, #FF4387);
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 100vh;
+    --text-color: white;
+    --bg-color: #23272A;
 }
 .banner {
     min-height: 300px;
@@ -23,11 +23,12 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
 }
-.banner h2 {
+.banner h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     width: max-content;
     margin: auto;
+    color: white;
 }
 article {
     width: 100%;

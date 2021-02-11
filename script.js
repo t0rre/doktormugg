@@ -1,5 +1,5 @@
 initColorSchemeChanger({
-    htmlElement: $("*"),
+    htmlElement: $("body"),
     dark:{
         "--bg-color": "#23272A",
         "--text-color": "white",
