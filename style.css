@@ -108,7 +108,13 @@ article h3, article h2 {
 {
     article {
         width: 80%;
+        max-width: 1300px;
         margin: 2rem auto 2rem auto;
         border-radius: 1rem;
+    }
+    .banner {
+        width: 80%;
+        max-width: 1300px;
+        margin: auto;
     }
 }
