@@ -11,6 +11,15 @@ initColorSchemeChanger({
         "--text-color": "black",
         "--accent-color-1": "orangered",
         }
+    });
+initColorSchemeChanger({
+    htmlElement: $(".float"),
+    dark:{
+        "border-color": "white"
+        },
+    light: {
+        "border-color": "#23272A"
+        }
     })
 $(".banner #dm_computer_container").append(dm_computer);
 $("#colorscheme").click(function(){
