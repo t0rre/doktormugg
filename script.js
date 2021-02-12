@@ -42,9 +42,13 @@ $(window).scroll(function (e) {
         if($(window).scrollTop() > 200)
         {
             $("#colorscheme").css("opacity", "0");
+            setTimeout(function() {
+                $("#colorscheme").css("display", "none");
+            }, 250);
         }
         else
         {
+            $("#colorscheme").css("display", "flex");
             $("#colorscheme").css("opacity", "1");
         }
     }
