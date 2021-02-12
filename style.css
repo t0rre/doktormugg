@@ -63,6 +63,7 @@ article h3, article h2 {
 }
 .author .author_picture {
     width: 8rem;
+    height: 8rem;
 }
 .author {
     display: flex;
